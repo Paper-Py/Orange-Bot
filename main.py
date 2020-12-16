@@ -33,7 +33,7 @@ async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandOnCooldown):
         await ctx.send("This command is on cooldown, please retry in {}s.".format(math.ceil(error.retry_after)))
     if isinstance(error, commands.MissingRequiredArgument):
-        await ctx.send("Missing argument(s)!")
+        await ctx.send('Missing Argument(s)!')
     if isinstance(error, commands.MissingPermissions):
             missing = [perm.replace('_', ' ').replace('guild', 'server').title() for perm in error.missing_perms]
             if len(missing) > 2:
