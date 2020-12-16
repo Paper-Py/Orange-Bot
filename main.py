@@ -19,9 +19,6 @@ client = commands.Bot(command_prefix="%")
 
 client.remove_command("help")
 
-redditid = os.environ.get("REDDIT_ID")
-reddits = os.environ.get("REDDIT_SECRET")
-
 footer = "Orange Bot made by Not a vibing cat#5692"
 ecolor = discord.Colour.red()
 
