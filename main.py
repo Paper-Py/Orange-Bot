@@ -562,7 +562,7 @@ async def sell_this(user,item_name,amount,price = None):
     return [True,"Worked"]
 
 @client.command(aliases = ["lb"])
-async def leaderboard(ctx,x = 1):
+async def leaderboard(ctx,x = 5):
     users = await get_bank_data()
     leader_board = {}
     total = []
